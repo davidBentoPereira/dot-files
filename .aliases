@@ -1,0 +1,39 @@
+#Aliases basic commands
+alias ls='ls -GFh'
+alias ll='ls -las'
+alias linuxv='lsb_release -a'
+
+#Aliases advanced commands
+# > mkshortcuts : Fix made to add all snapcrafts apps as shortcuts
+alias mkshortcuts='sudo cp /var/lib/snapd/desktop/applications/* /usr/share/applications'
+
+#Bootstrap a ruby project for THP
+alias rubynit='ruby /var/www/rubynit/rubynit.rb'
+
+#Aliases paths
+alias cdthp='cd /var/www/thp'
+alias cdwww='cd /var/www'
+
+#Aliases file open
+alias bashrc='nano ~/.bashrc'
+alias bash_aliases='nano ~/.bash_aliases'
+alias zshrc='subl ~/.zshrc'
+
+#Aliases Git
+alias gs='git status'
+alias ga='git add .'
+alias gc='git commit -m'
+alias gb='git branch'
+alias gbc='git branch checkout'
+alias gk='git checkout'
+alias gp='git push'
+alias gm='git merge'
+alias gl='git log --oneline'
+alias gr='git remote'
+
+#Aliases Rails
+#alias rc='rails console'
+#alias rs='rails server'
+#alias rt='rails test'
+#alias hrrc='heroku run rails console'
+#alias bi='bundle install'
