@@ -10,9 +10,12 @@ alias mkshortcuts='sudo cp /var/lib/snapd/desktop/applications/* /usr/share/appl
 #Bootstrap a ruby project for THP
 alias rubynit='ruby /var/www/rubynit/rubynit.rb'
 
-#Aliases paths
+#Aliases paths commands
+alias ..='cd ..'
+alias ...='cd ../..'
 alias cdthp='cd /var/www/thp'
 alias cdwww='cd /var/www'
+alias cdfree='cd /var/www/freelancing'
 alias cdlicencerubymine='cd ~/.config/JetBrains/RubyMine2020.1/eval'
 
 #Aliases file open
@@ -43,6 +46,7 @@ alias rs='rails server'
 alias rt='rails test'
 alias seed='rails db:seed'
 alias bi='bundle install'
+alias yi='yarn install'
 alias ba='bundle add'
 alias rdm='rails db:migrate'
 alias rds='rails db:migrate:status'
@@ -58,3 +62,8 @@ alias hrrms='heroku run rails db:migrate db:seed'
 # Cyberghost VPN
 alias vpnon="sudo cyberghostvpn --traffic --country-code CH --connect"
 alias vpnoff="sudo cyberghostvpn --stop"
+
+# Others
+alias screenfetch="screenfetch"
+alias cleardnscache="sudo systemd-resolve --flush-caches"
+
