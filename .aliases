@@ -66,4 +66,4 @@ alias vpnoff="sudo cyberghostvpn --stop"
 # Others
 alias screenfetch="screenfetch"
 alias cleardnscache="sudo systemd-resolve --flush-caches"
-
+alias killport3000="sudo kill -9 $(sudo lsof -t -i:3000)"
