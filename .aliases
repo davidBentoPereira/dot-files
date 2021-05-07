@@ -16,7 +16,9 @@ alias ...='cd ../..'
 alias cdthp='cd /var/www/thp'
 alias cdwww='cd /var/www'
 alias cdfree='cd /var/www/freelancing'
+alias cdibridge='cd /var/www/freelancing/ibridge_people'
 alias cdlicencerubymine='cd ~/.config/JetBrains/RubyMine2020.1/eval'
+alias login='/bin/bash --login'
 
 #Aliases file open
 alias bashrc='nano ~/.bashrc'
@@ -59,11 +61,22 @@ alias gph='git push heroku master'
 alias hrr='heroku run rails'
 alias hrrms='heroku run rails db:migrate db:seed'
 
+#Project Cykl
+alias serverfront='cd /var/www/freelancing/we-are-the-words/cykl-client && ng serve --disable-host-check'
+alias serverback='cd /var/www/freelancing/we-are-the-words/cykl-client && heroku local -f Procfile.dev -p 3000'
+
 # Cyberghost VPN
 alias vpnon="sudo cyberghostvpn --traffic --country-code CH --connect"
 alias vpnoff="sudo cyberghostvpn --stop"
+alias vpnonus="sudo cyberghostvpn --traffic --country-code US --connect"
+
+# IBridge_People
+alias launchprovit="cd /var/www/freelancing/ibridge_people/provit && rails server"
+alias launchfrontprovit="cd /var/www/freelancing/ibridge_people/front-provit && npm run dev"
+alias launchkeycloak="docker container start keycloak"
+
 
 # Others
 alias screenfetch="screenfetch"
 alias cleardnscache="sudo systemd-resolve --flush-caches"
-alias killport3000="sudo kill -9 $(sudo lsof -t -i:3000)"
+#alias killport="sudo kill -9 $(sudo lsof -t -i:3000)"
